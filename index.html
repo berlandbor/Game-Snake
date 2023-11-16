@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Змейка berlandbor ❤️</title>
+    <style>
+        #snakeCanvas {
+            padding: 0;
+            background: #d1e890;
+            display: block;
+            margin: 0 auto;
+        }
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+body {
+  text-align: center;
+  background:#719573 ;
+}
+
+h1 {
+  animation: colorChange 2s infinite; /* Пример анимации изменения цвета в течение 2 секунд, бесконечно повторяется */
+}
+
+@keyframes colorChange {
+  0% {
+    color: white; /* Начальный цвет текста */
+  }
+  50% {
+    color: #4CAF50; /* Цвет текста через половину времени анимации */
+  }
+  100% {
+    color: white; /* Конечный цвет текста, возвращаемся к начальному состоянию */
+  }
+}
+
+input {
+      /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+   /* transform: translate(-50%, -50%);*/
+    padding: 10px 20px;
+    background-color: White;
+    color: #4CAF50;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+footer {
+  font-size: 24px;
+  background: linear-gradient(90deg, #4CAF50, black, #4CAF50);
+  background-size: 200% 200%;
+  animation: colorShift 5s infinite;
+  color: transparent;
+  background-clip: text;
+}
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Игра: "Змейка"</h1>
+  </header>
+  <section>
+<div style="position: relative;">
+    <canvas id="snakeCanvas" width="380" height="450" onclick="reloadGame()"></canvas>
+<div id="startButton" class="start-button">Start</div>
+</div>
+   <br>
+
+<input type="button" value="Restart Game" id="stopGameButton">
+
+   <br>
+  </section>
+  <footer>
+    <p>
+      berlandbor ❤️
+    </p>
+  </footer>
+   <!--button id="btnUp">Up</button>
+<button id="btnDown">Down</button>
+<button id="btnLeft">Left</button>
+<button id="btnRight">Right</button-->
+    <script src="common.js"></script>
+    <script src="serpent.js"></script>
+
+</body>
+</html>
