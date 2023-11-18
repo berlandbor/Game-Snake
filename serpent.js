@@ -164,11 +164,11 @@ var snake = {
         var selfHit = false;
         for (var i = 1; i < this.bricks.length; i++) {
             selfHit = selfHit || (this.bricks[0].position.x == this.bricks[i].position.x && this.bricks[0].position.y == this.bricks[i].position.y);
-            if (selfHit) {
+           /* if (selfHit) {
                 break;
-            }
+            }*/
         }
-        this.hit = selfHit; //|| this.checkBorderCollision(canvas);
+        //this.hit = selfHit; //|| this.checkBorderCollision(canvas);
     },
     
    /* checkBorderCollision: function (canvas) {
